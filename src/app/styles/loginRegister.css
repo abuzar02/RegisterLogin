@@ -7,19 +7,21 @@
 }
 
 .auth-box {
-  background: white;
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 450px;
+  color: white;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  text-align: center;
 }
 
 .auth-box h2 {
   margin-bottom: 20px;
   text-align: center;
   font-size: 24px;
-  color: #333;
+  color: white;
 }
 
 .auth-box input {
@@ -52,6 +54,76 @@
 }
 
 .auth-box .link a {
-  color: #0070f3;
+  color: white;
   text-decoration: none;
+}
+/* akbshdjbvhjd */
+.login-bg {
+  background: url('../../../public/images/bg-city.avif') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 450px;
+  color: white;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs span {
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+  transition: all 0.3s;
+}
+
+.tabs span.active {
+  border-color: #00bfff;
+  color: #00bfff;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.forgot {
+  text-align: right;
+  margin: 10px 0;
+}
+
+.forgot a {
+  font-size: 12px;
+  color: #ffffffff;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100%;
+  background: #00bfff;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
 }

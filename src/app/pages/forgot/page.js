@@ -11,7 +11,7 @@ export default function Forgot() {
   };
 
   return (
-    <div className="auth-container">
+    <div className="auth-container login-bg">
       <div className="auth-box">
         <h2>Forgot Password</h2>
         <form onSubmit={handleSubmit}>
