@@ -1,0 +1,43 @@
+.main-header{
+    width: 100%;
+    height: 75px;
+    background: #252525;
+    border-bottom: .5px solid #ddd;
+    box-shadow:0px 0px 5px 0px #ccc;
+    color: white;
+    padding: 18px 0px 0px 0px;
+}
+.countainer{
+    width: 90%;
+    margin: auto;
+}
+.main-header header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header header .logo h4{
+    font-size: 16px;
+}
+.main-header header nav ul {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+}
+.main-header header nav ul li{
+    font-size: 13px;
+}
+.main-header header .login-icons{
+    display: flex;
+    gap: 10px;
+}
+.main-header header .login-icons button{
+    width: 120px;
+    height: 30px ;
+    border-radius: 15px;
+    background-color: white;
+    color: #252525;
+    border: .3px solid #ddd;
+    font-size: 13px;
+    cursor: pointer;
+}
