@@ -2,6 +2,8 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import "../../styles/loginRegister.css";
+import Image from "next/image";
+
 
 export default function LoginPage() {
   const [activeTab, setActiveTab] = useState("login");
@@ -11,7 +13,7 @@ export default function LoginPage() {
     password: "",
     confirmPassword: "",
     loginEmail: "",
-    loginPassword: ""
+    loginPassword: "",
   });
   const [message, setMessage] = useState("");
   const router = useRouter(); // 👈 for routing
@@ -92,7 +94,8 @@ export default function LoginPage() {
               onChange={handleChange}
             />
             <div className="forgot">
-              <a href="/pages/forgot">Forgot Password?</a> {/* ✅ Link to forgot */}
+              <a href="/pages/forgot">Forgot Password?</a>{" "}
+              {/* ✅ Link to forgot */}
             </div>
             <button className="login-btn" onClick={handleLogin}>
               Login
@@ -130,6 +133,32 @@ export default function LoginPage() {
             />
             <button className="login-btn" onClick={handleSignup}>
               Sign Up
+            </button>
+
+            <button
+              className="google-signup-btn"
+              onClick={() => alert("Google Sign Up coming soon...")}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "10px",
+                backgroundColor: "#fff",
+                color: "#000",
+                border: "1px solid #ddd",
+                padding: "10px 20px",
+                borderRadius: "5px",
+                marginTop: "15px",
+                cursor: "pointer",
+              }}
+            >
+              <Image
+                src="/images/google-i.png" // ✅ your icon path (inside public folder)
+                alt="Google Icon"
+                width={20}
+                height={20}
+              />
+              Sign Up with Google
             </button>
           </>
         )}
